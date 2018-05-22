@@ -1,0 +1,149 @@
+    #content {
+        width: 1000px;
+        margin: 20px auto;
+        overflow: hidden;
+    }
+    #content > #main_section {
+        width: 750px;
+        float: right;
+    }
+
+    #content > #main_aside {
+        width: 200px;
+        float: left;
+    }
+    #main_section > article.main_article {
+        padding: 20px;
+        border: 1px solid black;
+        margin-bottom: 20px;
+    }
+    #main_section > article.sub_article {
+        padding: 0;
+        border: 1px solid white;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* 첫 번째 탭 */
+    input:nth-of-type(1) { display: none; }
+    input:nth-of-type(1) ~ div:nth-of-type(1) { display: none; }
+    input:nth-of-type(1):checked ~ div:nth-of-type(1) { display: block; }
+
+    /* 두 번째 탭 */
+    input:nth-of-type(2) { display: none; }
+    input:nth-of-type(2) ~ div:nth-of-type(2) { display: none; }
+    input:nth-of-type(2):checked ~ div:nth-of-type(2) { display: block; }
+
+    /* 탭 모양 구성 */
+    section.buttons { overflow: hidden; }
+    section.buttons > label {
+        /* 수평 정렬 */
+        display: block;
+        float: left;
+
+        /* 크기 및 글자 위치 지정*/
+        width: 100px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+
+        /* 테두리 지정 */
+        box-sizing: border-box;
+        border: 1px solid black;
+
+        /* 색상 지정*/
+        background: white;
+        color: black;
+    }
+    #lb_a { border-radius: 3px 0px 0px 0px; }
+    #lb_b { border-radius: 0px 3px 0px 0px; }
+
+    /* 라디오 버튼 클릭시 색상 변경 */
+    input:nth-of-type(1):checked ~ section.buttons >  label:nth-of-type(1) {
+        background: rgb(241,95,95);
+        color: white;
+    }
+    input:nth-of-type(2):checked ~ section.buttons >  label:nth-of-type(2) {
+        background: rgb(241,95,95);
+        color: white;
+    }
+
+    .item {
+        overflow: hidden;
+        padding: 10px;
+        border: 1px solid black;
+        border-top: none;
+    }
+    .thumbnail {
+        float: left;
+    }
+    .description {
+        float: left;
+        margin-left: 10px;
+    }
+    .description > strong {
+        display: inline;
+        width: 200px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+  .card {
+    width: 200px;
+    height: 400px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    display: inline-block;
+
+  }
+  .card > a > img{
+    border-radius: 5px 5px 0px 0px;
+  }
+  .card-body > .card-title > a{
+    font-size: 20px;
+    color: blue;
+  }
+  .card > .card-body{
+    margin-top: 10px;
+    height: 200px;
+    padding: 5px;
+  }
+  .card-text{
+    font-size: 7px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-top: 10px;
+    height: 100px;
+  }
+  .card > .card-footer{
+    width: 200px;
+    height: 25px;
+    border: 1px outset none;
+    border-radius: 0px 0px 5px 5px;
+    border-top-color: black;
+    background: rgb(213,213,213);
+    color: rgb(116,116,116);
+  }
+  .card-footer > .text-muted{
+    padding-left: 5px;
+    vertical-align: middle;
+  }
+
+    footer {
+      width: 100%;
+      margin: 10px;
+      margin-bottom: 10px;
+
+      /* 테두리 */
+      box-sizing: border-box;
+      padding: 10px;
+      border: 1px solid none;
+      background: rgb(93,93,93);
+
+      /* 글자 정렬 */
+      text-align: center;
+      color: rgb(219,219,219);
+    }

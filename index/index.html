@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round|Yatra+One" rel="stylesheet">
+    <title>shop page</title>
+    <style>
+      @import url(headerStyle.css);
+      @import url(contentStyle.css);
+    </style>
+
+  </head>
+  <body>
+
+    <div id='wrap'>
+      <input id="toggle" type="checkbox" />
+      <header id="header">
+        <div id='top_container'>
+          <label class='left' for="toggle" onclick="">Toggle</label>
+          <h1>SHOP</h1>
+        </div>
+      </header>
+      <div id="toggle_item_wrap">
+          <div id="toggle_item">
+              <ul>
+                  <li><a href="#home">HOME</a></li>
+                  <li><a href="#about">ABOUT</a></li>
+                  <li><a href="#service">SERVICE</a></li>
+                  <li><a href="#contact">CONTACT</a></li>
+              </ul>
+          </div>
+      </div>
+    </div>
+
+
+
+
+    <div id="content">
+      <section id="main_section">
+          <article class="main_article">
+            <img src="http://placehold.it/700x300" />
+          </article>
+          <article class="sub_article">
+            <div class="card">
+                <a href="#"><img class="card-img" src="http://placehold.it/200x150" alt=""></a>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a href="#">Item One</a>
+                  </h4>
+                  <h5>$24.99</h5>
+                  <p class="card-text">item one 설명 <br>congue quis dolor. Cras sagittis rhoncus faucibus.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">★ ★ ★ ★ ☆</small>
+                </div>
+              </div>
+
+            <div class="card">
+                <a href="#"><img class="card-img" src="http://placehold.it/200x150" alt=""></a>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a href="#">Item Two</a>
+                  </h4>
+                  <h5>$10.99</h5>
+                  <p class="card-text">item two 설명 <br>Lorem ipsum dolor sit amet, eu rutrum mi augue tristique odio. </p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">★ ★ ★ ★ ☆</small>
+                </div>
+              </div>
+            <div class="card">
+                <a href="#"><img class="card-img" src="http://placehold.it/200x150" alt=""></a>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a href="#">Item Three</a>
+                  </h4>
+                  <h5>$33.90</h5>
+                  <p class="card-text">item three 설명 <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">★ ★ ★ ☆ ☆</small>
+                </div>
+              </div>
+          </article>
+
+        <article class="sub_article">
+          <div class="card">
+              <a href="#"><img class="card-img" src="http://placehold.it/200x150" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Item Four</a>
+                </h4>
+                <h5>$12.99</h5>
+                <p class="card-text">item four 설명 <br>congue quis dolor. Cras sagittis rhoncus faucibus.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">★ ★ ★ ★ ☆</small>
+              </div>
+            </div>
+
+          <div class="card">
+              <a href="#"><img class="card-img" src="http://placehold.it/200x150" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Item Five</a>
+                </h4>
+                <h5>$24.99</h5>
+                <p class="card-text">item five 설명 <br>Lorem ipsum dolor sit amet, eu rutrum mi augue tristique odio. </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">★ ★ ★ ☆ ☆</small>
+              </div>
+            </div>
+          <div class="card">
+              <a href="#"><img class="card-img" src="http://placehold.it/200x150" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Item Six</a>
+                </h4>
+                <h5>$20.99</h5>
+                <p class="card-text">item six 설명 <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">★ ★ ★ ☆ ☆</small>
+              </div>
+            </div>
+        </article>
+      </section>
+
+        <aside id="main_aside">
+            <input id="lately" type="radio" name="tab" checked="checked" />
+            <input id="issue_content" type="radio" name="tab" />
+            <section class="buttons">
+                <label id="lb_a" for="lately">최근 검색</label>
+                <label id="lb_b" for="issue_content">인기 컨텐츠</label>
+            </section>
+            <div class="tab_item">
+                <ul>
+                    <li class="item"><a href="#">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/45x45" />
+                        </div>
+                        <div class="description">
+                            <strong>shoes</strong><p>1분전</p>
+                        </div>
+                    </a></li>
+                    <li class="item"><a href="#">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/45x45" />
+                        </div>
+                        <div class="description">
+                            <strong>shirts</strong><p>3분전</p>
+                        </div>
+                    </a></li>
+                    <li class="item"><a href="#">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/45x45" />
+                        </div>
+                        <div class="description">
+                            <strong>jeans</strong><p>3분전</p>
+                        </div>
+                    </a></li>
+                    <li class="item"><a href="#">
+                        <div class="thumbnail">
+                            <img src="http://placehold.it/45x45" />
+                        </div>
+                        <div class="description">
+                            <strong>jacket</strong><p>15분전</p>
+                        </div>
+                    </a></li>
+                </ul>
+            </div>
+            <div class="tab_item">
+                <ul>
+                  <li class="item"><a href="#">
+                      <div class="thumbnail">
+                          <img src="http://placehold.it/45x45" />
+                      </div>
+                      <div class="description">
+                          <strong>Hot shoes</strong><p>top1</p>
+                      </div>
+                  </a></li>
+                  <li class="item"><a href="#">
+                      <div class="thumbnail">
+                          <img src="http://placehold.it/45x45" />
+                      </div>
+                      <div class="description">
+                          <strong>Hot shirts</strong><p>top3</p>
+                      </div>
+                  </a></li>
+                  <li class="item"><a href="#">
+                      <div class="thumbnail">
+                          <img src="http://placehold.it/45x45" />
+                      </div>
+                      <div class="description">
+                          <strong>Hot jeans</strong><p>top2</p>
+                      </div>
+                  </a></li>
+                  <li class="item"><a href="#">
+                      <div class="thumbnail">
+                          <img src="http://placehold.it/45x45" />
+                      </div>
+                      <div class="description">
+                          <strong>Hot jacket</strong><p>top4</p>
+                      </div>
+                  </a></li>
+                </ul>
+            </div>
+        </aside>
+
+    </div>
+  </body>
+
+
+  <footer>
+    Copyright &copy; Shop Website Sample 2018
+  </footer>
+
+</html>
